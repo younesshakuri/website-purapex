@@ -1,0 +1,66 @@
+/* سکشن Leistungen */
+.leistungen-section {
+  background-color: #f8f9fa;
+}
+
+.leistungen-section h2,
+.leistungen-section h3,
+.leistungen-section h4 {
+  color: var(--primary-color4);
+}
+
+.leistungen-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.leistungen-section ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.leistungen-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color2);
+  font-weight: bold;
+}
+
+.leistungen-section .img-fluid {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.leistungen-section .img-fluid:hover {
+  transform: scale(1.02);
+}
+
+/* آیکون‌های تیتر */
+.leistungen-section i {
+  vertical-align: middle;
+}
+
+/* تنظیمات پایانی متن */
+.leistungen-section .text-center p {
+  color: #555;
+}
+
+/* ریسپانسیو بهتر برای موبایل */
+@media (max-width: 768px) {
+  .leistungen-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .leistungen-section h4 {
+    font-size: 1.25rem;
+  }
+
+  .leistungen-section ul li {
+    font-size: 0.95rem;
+  }
+}

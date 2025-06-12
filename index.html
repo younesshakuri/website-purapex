@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+  <!-- Main Style -->
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/headercrosel.css">
+
+  <!-- font-awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+  <title>Purapex</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header hero-navbar fixed-top shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <a href="index.html" class="navbar-brand">
+        <img src="./assets/img/logo/Purapex_Logo4.png" alt="Purapex Logo" class="img-fluid" />
+      </a>
+
+      <!-- Hamburger Button for mobile -->
+      <button class="navbar-toggler d-md-none" type="button" aria-label="Toggle navigation" id="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="header__menu">
+        <ul class="nav">
+          <li class="nav-item animated-border"><a class="nav-link active " href="#">Home</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="./assets/html/uberuns.html">Über uns</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" id="color-Contras" href="./assets/html/unsere.html">Unsere
+              Leistungen</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="./assets/html/karriere.html">Karriere</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="./assets/html/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <!--  Carousel -->
+
+  <section id="dual-slider-section" class="position-relative py-5">
+    <div class="container-fluid">
+
+      <div class="row g-0 align-items-center">
+        <!-- Image Carousel -->
+
+        <!-- <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1">
+      <i class="bi bi-heart-pulse-fill"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+      <i class="bi bi-gear-fill"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+      <i class="bi bi-laptop"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4">
+      <i class="bi bi-building"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5">
+      <i class="bi bi-lightning-fill"></i>
+    </button>
+  </div> -->
+
+
+        <div class="col-md-8 position-relative">
+          <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" id="img-border">
+              <div class="carousel-item active">
+                <img src="./assets/img/crusel/Artzin02.png" class="d-block w-100" alt="Artzin" />
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/crusel/ingenieur02.png" class="d-block w-100" alt="ingenieur" />
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/crusel/IT03.png" class="d-block w-100" alt="IT" />
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/crusel/Architekt02.png" class="d-block w-100" alt="Architekt" />
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/crusel/premium002.png" class="d-block w-100" alt="premium" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Carousel -->
+        <div class="col-md-3 position-relative" id="cro-text">
+          <div id="textCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner text-center d-flex align-items-center justify-content-center">
+              <div class="carousel-item active">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Grenzen überwinden, Talente gewinnen</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section1" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Global rekrutieren. Regional profitieren.</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section2" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Wir bringen Kompetenz über Grenzen hinweg zu Ihnen</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section3" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Global rekrutieren. Regional profitieren</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section4" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Jetzt unverbindlich anfragen!</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section5" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <!-- سایر کپشن‌ها -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Candidate Section -->
+  <section id="candida" class="page-section text-center py-5">
+    <div class="container animate-container" id="candida-text">
+      <!-- <h4 class="display-6 animate-on-scroll from-right shadowed-text">Hochmotivierte Kandidaten für Ihr Unternehmen</h4> -->
+      <h2 class="display-4 fw-bold animate-on-scroll from-right shadowed-text">Gewinnen Sie qualifizierte Fachkräfte
+        weltweit und
+        zuverlässig</h2>
+      <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+        Fachkräftemangel bremst Ihr Wachstum? Mit Purapex sichern Sie sich heute die Expertinnen und Experten von
+        morgen. Wir identifizieren für Sie geeignete Kandidatinnen und Kandidaten aus Nicht-EU-Ländern und begleiten den
+        gesamten Rekrutierungsprozess von der Auswahl bis zur erfolgreichen Integration in Ihrem Unternehmen. Unsere
+        Fachkräfte durchlaufen im Herkunftsland eine gezielte sprachliche und interkulturelle Vorbereitung, um optimal
+        auf die Anforderungen am Arbeitsplatz in Deutschland vorbereitet zu sein. Purapex übernimmt die komplette
+        Koordination aller administrativen Abläufe von der Visumsbeantragung über Arbeitserlaubnis bis hin zur Ankunft
+        in Deutschland und bleibt auch danach Ihr verlässlicher Partner für eine gelungene Eingliederung in den
+        Betriebsalltag.
+      </p>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificate" class="page-section d-flex align-items-center justify-content-center py-5">
+    <div class="container" id="certi">
+      <div class="row flex-nowrap overflow-auto justify-content-center animate-on-scroll from-right">
+        <div class="col-auto">
+          <div class="cert-card card mx-2">
+            <img src="./assets/img/Certificate/award-1.png" class="card-img-top" alt="award-1" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="cert-card card mx-2">
+            <img src="./assets/img/Certificate/award-2.png" class="card-img-top" alt="award-2" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="cert-card card mx-2">
+            <img src="./assets/img/Certificate/Bewertungen-5.png" class="card-img-top" alt="bewer-5" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="cert-card card mx-2">
+            <img src="./assets/img/Certificate/Bewertungen-G.png" class="card-img-top" alt="bewer-g" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="cert-card card mx-2">
+            <img src="./assets/img/Certificate/BVMW-Mittelstand.png" class="card-img-top" alt="bvmw" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asset Section begin -->
+  <section class="track spad" id="skill-menu">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex align-items-center my-4 justify-content-center">
+          <i class="bi bi-person-fill fs-1 color4 me-3"></i>
+          <h2 class="mb-0">Ihre Vorteile mit Purapexklar, verlässlich, wirkungsvoll</h2>
+        </div>
+
+        <!-- ستون سمت چپ -->
+        <div class="col-md-6">
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill1.jpg')">
+            <i class="bi bi-building fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie haben jederzeit einen festen Ansprechpartner...</p>
+          </div>
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill2.jpg')">
+            <i class="bi bi-people-fill fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie reduzieren Zeitaufwand und Kosten...</p>
+          </div>
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill3.jpg')">
+            <i class="bi bi-person-heart fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie sichern den langfristigen Zugang...</p>
+          </div>
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill4.jpg')">
+            <i class="bi bi-stopwatch-fill fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie gewinnen Bewerber mit geprüften Sprachkenntnissen...</p>
+          </div>
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill5.jpg')">
+            <i class="bi bi-globe-central-south-asia-fill fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie stärken Ihre Position als attraktiver Arbeitgeber...</p>
+          </div>
+          <div class="d-flex align-items-center my-3" onmouseover="changeBgColor('assets/img/skill/skill6.jpg')">
+            <i class="bi bi-calendar2-check fs-1 color4 me-3"></i>
+            <p class="progres mb-0">Sie konzentrieren sich auf Ihr Kerngeschäft...</p>
+          </div>
+        </div>
+
+        <!-- ستون سمت راست -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div id="right-column" class="asset-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Asset Section end -->
+
+  <!-- Activity Section -->
+  <section id="Activity" class="page-section text-center py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="Activity-text">
+          <h2 class="display-4 fw-bold shadowed-text">Lösungen für alle Branchen gezielt, zuverlässig, international
+          </h2>
+          <p class="lead mt-4 shadowed-text text-justify">
+            Purapex unterstützt Unternehmen branchenübergreifend bei der Gewinnung internationaler Fachkräfte aus
+            Nicht-EU-Staaten. Gemeinsam mit Ihnen definieren wir ein detailliertes Anforderungsprofil und wählen
+            passende Kandidatinnen und Kandidaten sorgfältig aus unserem globalen Netzwerk aus. Unser Fokus liegt dabei
+            auf nachhaltiger Passung, professioneller Vorbereitung und reibungsloser Integration in Ihren Betrieb. </p>
+        </div>
+
+        <div class="col-12 mt-4" id="Activity-uns">
+          <h4 class="fw-bold shadowed-text">In folgenden Bereichen sind wir bereits erfolgreich aktiv:</h4>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex flex-column gap-3" id="carousel-text">
+                <div class="d-flex me-3">
+                  <i class="bi bi-hospital-fill fs-3 color4 me-3"></i>
+                  <p class="mb-0">Medizinisch-technisches Personal (z.B. MTRA, OTA, MTLA)</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-heart-pulse fs-3 color4 me-3"></i>
+                  <p class="mb-0">Gesundheitswesen (z.B. Pflegekräfte, medizinisches Fachpersonal)</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-tools fs-3 color4 me-3"></i>
+                  <p class="mb-0">Ingenieurwesen (z.B. Maschinenbau, Bauingenieurwesen)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex me-3">
+                  <i class="bi bi-laptop fs-3 color4 me-3"></i>
+                  <p class="mb-0">Informationstechnologie (z.B. Softwareentwicklung, IT-Consulting)</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-lightning-charge-fill fs-3 color4 me-3"></i>
+                  <p class="mb-0">Elektrotechnik (z.B. Elektroingenieur:innen, Betriebstechniker:innen)</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-gear-fill fs-3 color4 me-3"></i>
+                  <p class="mb-0">Ingenieurwesen (z.B. Maschinenbau, Bauingenieurwesen)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex me-3">
+                  <i class="bi bi-bricks fs-3 color4 me-3"></i>
+                  <p class="mb-0">Architektur und Bauplanung</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-droplet-half fs-3 color4 me-3"></i>
+                  <p class="mb-0">Chemie- und Verfahrenstechnik</p>
+                </div>
+                <div class="d-flex me-3">
+                  <i class="bi bi-nut fs-3 color4 me-3"></i>
+                  <p class="mb-0">Industrie, Baugewerbe und Handwerk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Section end -->
+
+  <!-- Cooperation Section begin -->
+
+  <section id="Cooperation">
+    <div class="container text-align-center">
+      <div class="row g-3 justify-content-center align-items-center">
+        <div class="col-md-4 g-3" id="Cooperation-img">
+          <img src="./assets/img//logo/logowork22.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="spacer"></div>
+
+        <div class="col-md-7 g-3" id="Cooperation-text">
+          <div class="card-body">
+            <p class="card-text">
+              „Als Klinikverbund mit hohem Personalbedarf haben wir nach einem Partner gesucht, der über den reinen
+              Rekrutierungsprozess hinausdenkt. Purapex hat uns mit einem klar strukturierten Konzept für langfristige
+              Fachkräftegewinnung überzeugt. Wir sehen großes Potenzial in dieser Zusammenarbeit und werden den weiteren
+              Aufbau ausdrücklich unterstützen.“
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cooperation end -->
+
+  <!-- über Purapex section gegin -->
+  <section id="ubersagen">
+    <div class="container d-flex text-align-center">
+      <div class="row g-3 justify-content-center align-items-center">
+        <h2>Was unsere Recruiting-Partner über Purapex sagen:</h2>
+      </div>
+  </section>
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner uberimg">
+        <div class="carousel-item active">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Markus Ehlers.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="spacer"></div>
+
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Wir haben mit Purapex erstmals zwei IT-Fachkräfte aus Drittstaaten eingestellt. Die Bewerber waren
+                    hervorragend vorbereitet, der gesamte Ablauf war professionell. Besonders positiv: die persönliche
+                    Betreuung auch nach Ankunft.“
+                  </p>
+                  <h3>Dr. Markus Ehlers, Leitung Personalmanagement,<span> MedicaKlinik GmbH</span></h3>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center" id="ff">
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Claudia Möller.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="spacer"></div>
+
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Das Konzept von Purapex – gezielte Auswahl, sprachliche Vorbereitung und langfristige Integration –
+                    hat uns überzeugt. Wir freuen uns, ein junges Unternehmen mit echter Vision unterstützen zu können.“
+                  </p>
+                  <h3>Claudia Möller, Teamleitung IT, <span>BayerNet Solutionss</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center" id="ff">
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Jens Krüger.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="spacer"></div>
+
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+
+                  <p class="card-text">
+                    Unsere Zusammenarbeit basiert auf Verlässlichkeit, Transparenz und Respekt. Ihre Zufriedenheit hat
+                    dabei
+                    oberste Priorität: Sollte eine vermittelte Fachkraft nicht einreisen oder das Arbeitsverhältnis
+                    innerhalb
+                    der ersten vier Wochen nach Beginn von einer Seite beendet werden, bieten wir Ihnen entweder eine
+                    vollständige Rückerstattung der Vermittlungsgebühr oder kostenfrei einen qualifizierten Ersatz.
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center" id="ff">
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Sandra Neumann.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="spacer"></div>
+
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Unsere Pflegeeinrichtung profitiert bereits heute von der strukturierten und menschlich
+                    ausgerichteten Fachkräftevermittlung durch Purapex. Wir sehen darin eine nachhaltige Lösung für die
+                    Zukunft.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center" id="ff">
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Thomas Finke.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="spacer"></div>
+
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Die Elektroingenieure, die wir über Purapex erhalten haben, passen fachlich und persönlich. Die
+                    Professionalität der Vermittlung und die transparente Kommunikation haben uns überzeugt.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--  uber2  -->
+
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner uberimg" id="uber-img">
+        <div class="carousel-item active">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Purapex hat uns nicht nur passende Profile vermittelt, sondern auch mit einem glaubwürdigen
+                    Gesamtkonzept überzeugt. Wir haben uns bewusst für die Zusammenarbeit entschieden, um ein junges,
+                    engagiertes Unternehmen im Aufbau zu stärken.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+
+              <div class="spacer"></div>
+
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Annika Paulsen.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Wir standen vor der Herausforderung, eine spezialisierte Chemieingenieurin zu finden – und wurden
+                    bei Purapex fündig. Der ganze Prozess war klar, effizient und mit Herz begleitet.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Dr. Beate Lehmann.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Unser erster IT-Kandidat über Purapex wurde im Herkunftsland sprachlich vorbereitet und kam mit
+                    klarem beruflichem Ziel zu uns. Wir freuen uns, den weiteren Weg von Purapex begleiten zu dürfen.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Nadja Aksoy.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Wir haben uns bewusst für Purapex entschieden, weil uns das Prinzip der engen Begleitung und der
+                    Fokus auf Integration überzeugt hat. Der vermittelte Ingenieur fühlt sich sichtbar wohl – das
+                    spricht für das Konzept.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+
+              <div class="spacer"></div>
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Karsten Blume.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-align-center">
+            <div class="row g-3 justify-content-center align-items-center">
+              <div class="col-md-7 g-3" id="Cooperation-text">
+                <div class="card-body">
+                  <p class="card-text">
+                    „Als Klinikleitung sehen wir uns in der Verantwortung, neue Wege in der Fachkräftegewinnung zu
+                    gehen. Purapex bietet ein Modell, das nicht nur kurzfristig denkt, sondern den Menschen in den
+                    Mittelpunkt stellt. Wir sind gerne Teil dieser Aufbauphase.“
+                  </p>
+                  <h3>Jens Krüger, Geschäftsführer,<span> Technometal GmbH</span></h3>
+                </div>
+              </div>
+
+              <div class="spacer"></div>
+              <div class="col-md-4 g-3" id="Cooperation-img">
+                <img src="./assets/img/uber/Dr. Harald Benesch.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ------- -->
+  <!-- Advertising section begin -->
+
+  <section id="advertising">
+    <div class="container text-align-center">
+      <div class="row g-3 justify-content-center align-items-center">
+        <div class="col-md-4 g-3" id="Cooperation-img">
+          <img src="./assets/img/logo/logosa.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="spacer"></div>
+
+        <div class="col-md-7 g-3" id="Cooperation-text">
+          <div class="card-body">
+            <p class="card-text">
+              Die Sachsenmilch Leppersdorf ist einer der modernsten milchverarbeitenden Betriebe Europas. Sie gehört zur
+              Unternehmensgruppe Theo Müller und beschäftigt rund 3.000 Mitarbeiter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advertising-kaef">
+    <div class="container text-align-center">
+      <div class="row g-3 justify-content-center align-items-center">
+        <div class="col-md-6 card-body">
+          <p class="card-text">
+            Die KAEFER Industrie GmbH ist eines der marktführenden Unternehmen im Bereich Wärme-, Kälte-, Schall- und
+            Brandschutz. Sie ist eine Tochtergesellschaft des international tätigen Unternehmens KAEFER SE & Co. KG das
+            über 33.000 MItarbeiter beschäftigt.
+          </p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="col-md-4 g-3" id="advertising-img">
+          <img src="./assets/img/logo/kaeferlogo.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-7 g-3" id="Cooperation-text">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Advertising End -->
+
+
+
+  <!-- --------- -->
+
+  <section id="vorteil-box">
+    <div class="container my-5">
+      <div class="row">
+
+        <!-- Start of row 1 -->
+        <div class="col-md-6" id="togglebox">
+          <h3>Unsere Spezialisierung: Internationale Fachkräfte für Schlüsselbranchen</h3>
+          <p>Wir sind spezialisiert auf die qualitätsgesicherte Rekrutierung, sprachliche Vorbereitung und rechtssichere
+            Vermittlung von Fachkräften aus Drittstaaten. Unsere Partnerunternehmen in Deutschland profitieren von
+            geprüften Profilen, strukturierten Verfahren und nachhaltiger Integrationsbegleitung. Unser Fokus liegt auf
+            folgenden Berufsfeldern:</p><br><br>
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Pflege- und Gesundheitspersonal</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/01-Pflege.jpg" class="img-fluid mb-2" alt="">
+              <p>Examinierte Pflegekräfte, Hebammen, Altenpfleger:innen und Gesundheitsfachkräfte mit
+                Anerkennungspotenzial für den deutschen Arbeitsmarkt. Wir begleiten den gesamten Prozess von der
+                Sprachausbildung bis zur erfolgreichen Arbeitsaufnahme.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <h3>Unsere erweiterte Spezialisierung: Vermittlung internationaler Auszubildender</h3>
+          <p>Neben der Fachkräftevermittlung haben wir uns gezielt auf die Vermittlung von internationalen
+            Auszubildenden
+            spezialisiert. Wir begleiten junge Menschen aus Drittstaaten auf dem Weg in eine qualifizierte duale
+            Ausbildung in Deutschland sprachlich, organisatorisch und persönlich.Unsere Partnerunternehmen profitieren
+            von
+            motivierten Nachwuchskräften, die gut vorbereitet und langfristig orientiert sind.Unsere
+            Ausbildungsvermittlung umfasst folgende neun Schwerpunktbranchen:</p>
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Hotellerie</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/1-Hotellerie.jpg" class="img-fluid mb-2" alt="">
+              <p>Ausbildungsberufe wie Hotelfachmann/-frau oder Hotelkaufmann/-frau ideal für internationale Talente mit
+                Organisationstalent, Serviceorientierung und Freude am Umgang mit Menschen.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start of row 2 -->
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Medizinisch-Technisches Personal (MTA, MTLA, OTA etc.)</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/02-Medizinisch-Technisches Personal.jpg" class="img-fluid mb-2"
+                alt="">
+              <p> Wir vermitteln qualifiziertes medizinisch-technisches Personal wie Medizinisch-Technische
+                Assistent:innen (MTA), Laborassistent:innen (MTLA), Operationstechnische Assistent:innen (OTA) und
+                andere
+                Fachkräfte für den Funktionsdienst mit Praxiserfahrung und fachsprachlicher Vorbereitung.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Gastronomie</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/2-Gastronomie.jpg" class="img-fluid mb-2" alt="">
+              <p>Ob Restaurantfachkraft, Fachkraft im Gastgewerbe oder Koch/Köchin wir vermitteln engagierte
+                Bewerber:innen mit Interesse an Küche, Service und Teamarbeit.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 3 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Ingenieurwesen (Maschinenbau, Bau, Elektro)</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/03-Ingenieurwesen.jpg" class="img-fluid mb-2" alt="">Ob
+              Maschinenbauingenieure, Bauingenieure oder Elektroingenieure wir vermitteln erfahrene technische
+              Fachkräfte mit international anerkannten Abschlüssen, Projektpraxis und hoher Anpassungsbereitschaft an
+              deutsche Normen und Standards.
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Systemgastronomie</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/3-Systemgastronomie.jpg" class="img-fluid mb-2" alt="">
+              <p>Für große Gastronomieketten und Filialbetriebe Ausbildung zur Fachkraft für Systemgastronomie, mit
+                Fokus
+                auf standardisierte Abläufe, Kundenzufriedenheit und Stressresistenz.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 4 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Informationstechnologie (Software, IT-Consulting, Systeme)</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/04-Informationstechnologie.jpg" class="img-fluid mb-2" alt="">
+              <p> Unsere IT-Fachkräfte sind spezialisiert auf Softwareentwicklung, IT-Beratung, Systemintegration und
+                Datenmanagement. Viele sprechen bereits fließend Englisch oder Deutsch und bringen aktuelle Kenntnisse
+                in
+                modernen Programmiersprachen und Technologien mit. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Pflegeberufe</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/4-Pflegeberufe.jpg" class="img-fluid mb-2" alt="">
+              <p>Internationale Bewerber:innen für die Ausbildung zum/zur Pflegefachmann/-frau oder Pflegeassistent:in
+                mit
+                Herz, Engagement und gezielter Vorbereitung auf die Anforderungen des Pflegealltags.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 5 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Architektur und Bauplanung</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/05-Architektur und Bauplanung.jpg" class="img-fluid mb-2" alt="">
+              <p>Internationale Fachkräfte im Bereich Architektur, Bauplanung und Bauleitung mit fundierter Ausbildung,
+                Erfahrung in CAD-Programmen und sicherem Verständnis für deutsche Bauprozesse und Bauordnungen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Gesundheitswesen</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/5-Gesundheitswesen.jpg" class="img-fluid mb-2" alt="">
+              <p>Ausbildungsplätze z. B. als Medizinische Fachangestellte, Zahnmedizinische Assistenz oder
+                Pharmazeutisch-kaufmännische Angestellte mit fachlicher Vorbereitung und hoher Lernbereitschaft.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 6 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Chemie, Labor und Verfahrenstechnik</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/06-Chemie, Labor und Verfahrenstechnik.jpg" class="img-fluid mb-2"
+                alt="">
+              <p>Wir vermitteln akademisch oder praxisorientiert ausgebildete Fachkräfte aus Chemie, Biotechnologie,
+                Verfahrenstechnik und Laboranalytik, die über Fachsprachkenntnisse und sicheren Umgang mit modernen
+                Analyseverfahren verfügen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Einzelhandel</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/6-Groß- und Außenhandelsmanagement.jpg" class="img-fluid mb-2"
+                alt="">
+              <p>Ob Verkäufer:in, Kaufmann/-frau im Einzelhandel oder Fachkraft für Lebensmittelverkauf ideal für
+                kommunikative Auszubildende mit Kundenorientierung und Zuverlässigkeit.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 7 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Pharmazie und Medizintechnik</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/07-Pharmazie und Medizintechnik.jpg" class="img-fluid mb-2" alt="">
+              <p>Fachkräfte für die pharmazeutische Industrie, Arzneimittelproduktion, Qualitätskontrolle und
+                Medizintechnik, mit internationaler Erfahrung, naturwissenschaftlicher Qualifikation und hoher
+                Compliance-Affinität.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Groß- und Außenhandelsmanagement
+              </h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/7-Groß- und Außenhandelsmanagement.jpg" class="img-fluid mb-2"
+                alt="">
+              <p>Ausbildung zum/zur Kaufmann/-frau im Groß- und Außenhandel für international denkende Bewerber:innen
+                mit
+                kaufmännischem Interesse und strukturiertem Arbeiten.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 8-->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Industrie, Produktion und Instandhaltung</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/08-Industrie, Produktion und Instandhaltung.jpg"
+                class="img-fluid mb-2" alt="">
+              <p>Ob Industriemechaniker, Mechatroniker, Produktionstechniker oder Instandhaltungsfachkräfte wir
+                rekrutieren erfahrene Profis mit technischem Verständnis, Maschinenkenntnissen und präzisem Arbeiten
+                unter
+                industriellen Standards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Hauswirtschaft</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/8-Hauswirtschaft.jpg" class="img-fluid mb-2" alt="">
+              <p>Für den Einsatz in Hotels, Kliniken oder Pflegeeinrichtungen Hauswirtschafter:innen sorgen für Ordnung,
+                Hygiene, Verpflegung und das Wohlergehen der Bewohner und Gäste.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Start of row 9 -->
+
+        <div class="col-md-6" id="togglebox">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Baugewerbe und Handwerk</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light" id="toggleimg">
+              <img src="./assets/img/Specialization/09-Baugewerbe und Handwerk.jpg" class="img-fluid mb-2" alt="">
+              <p>Fachkräfte aus dem Bau- und Ausbaugewerbe: Maurer, Elektriker, Anlagenmechaniker, Heizungs- und
+                Sanitärtechniker, Tischler, Maler u. a. mit abgeschlossener Berufsausbildung, Erfahrung auf Baustellen
+                und
+                zuverlässiger Arbeitsweise.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="togglebox-Vorteile">
+          <div class="toggle-box">
+            <div class="toggle-header d-flex align-items-center" onclick="toggleContent(this)">
+              <span class="arrow me-2">▶</span>
+              <h6 class="m-0">Lagerlogistik & Versandhandel</h6>
+            </div>
+            <div class="toggle-content mt-2 px-3 py-2 border rounded bg-light">
+              <img src="./assets/img/Specialization/9-Lagerlogistik & Versandhandel.jpg" class="img-fluid mb-2" alt="">
+              <p>Für größere Einzelhändler, Logistikzentren und Onlinehandel vermitteln wir Bewerber:innen für die
+                Ausbildung zur Fachkraft für Lagerlogistik mit Ordnungssinn, Technikaffinität und körperlicher
+                Belastbarkeit.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- -------------- -->
+
+  <section id="Cooperation">
+    <div class="container text-align-center">
+      <div class="row g-3 justify-content-center align-items-center">
+        <div class="col-md-4 g-3" id="Cooperation-img">
+          <img src="./assets/img/ausbildung.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="spacer"></div>
+
+        <div class="col-md-7 g-3" id="Cooperation-text">
+          <div class="card-body">
+            <h3> Ausbildung mit Struktur Integration mit Perspektive
+            </h3>
+            <p class="card-text">
+              Unsere internationalen Auszubildenden werden umfassend vorbereitet:
+              Sprachkurse, interkulturelle Schulung, Berufskunde, sowie Unterstützung bei Visa, Unterkunft und
+              Integration. So entsteht ein stabiler Einstieg für Auszubildende und Betriebe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------- -->
+
+  <!-- --------- -->
+
+
+  <section id="purapex-benefits" class="page-section text-center py-5">
+    <div class="container animate-container purapex-benefits-container" id="purapex-benefits-text">
+      <h4 class="display-6 animate-on-scroll from-right purapex-shadow-text">
+        Internationale Fachkräfte für Ihr Unternehmen nachhaltig, vorbereitet, integriert
+      </h4>
+      <h2 class="display-4 fw-bold animate-on-scroll from-right purapex-shadow-text">
+        Ihre Vorteile mit internationalen Fachkräften von Purapex
+      </h2>
+
+      <!-- یک بلاک برای هر مزیت -->
+      <div class="purapex-benefit-box">
+        <h3>Sie gewinnen hochmotivierte Fachkräfte mit klarer Berufsperspektive</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Unsere Kandidatinnen und Kandidaten entscheiden sich ganz bewusst für den Schritt nach Deutschland mit
+            einem
+            klaren beruflichen Ziel und großer Einsatzbereitschaft. Sie bringen nicht nur die notwendige Qualifikation
+            mit, sondern auch ein hohes Maß an Motivation, sich in Ihrem Unternehmen dauerhaft zu etablieren.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie erhalten sprachlich vorbereitete Fachkräfte mit mindestens B1-Niveau</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Alle Bewerberinnen und Bewerber durchlaufen in ihrem Herkunftsland ein intensives Sprachtraining. Ziel ist
+            ein gesichertes B1-Niveau mit berufsspezifischer Ausrichtung. So sind die Fachkräfte in der Lage, von
+            Beginn an aktiv im Betrieb mitzuwirken. Im Vorstellungsgespräch können Sie sich persönlich von den
+            Sprachkenntnissen überzeugen.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie profitieren von vollständiger Betreuung von der Auswahl bis zur Integration</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Purapex begleitet den gesamten Prozess: von der Profilerstellung über Visum, Anerkennung, Einreise und
+            Integration bis hin zur Begleitung im Betriebsalltag. Unsere Betreuung endet nicht mit der Ankunft wir
+            stehen sowohl Ihnen als auch den vermittelten Fachkräften weiterhin als Ansprechpartner zur Seite.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie geben jungen Menschen eine Perspektive</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Die meisten unserer Kandidaten kommen aus Ländern mit hoher Jugendarbeitslosigkeit und schlechter
+            Wirtschaftslage. Die Ausbildung ist für die Kandidaten nicht nur ein Berufsabschluss, sondern bietet die
+            Chance auf ein besseres Leben in Deutschland. Entsprechend ehrgeizig und hochmotiviert sind Ihre künftigen
+            Auszubildenden.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie erhalten eine voll integrierbare, langfristige Arbeitskraft</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Unsere Fachkräfte planen nicht nur eine Übergangslösung, sondern einen dauerhaften Aufenthalt in
+            Deutschland. Bereits nach zwei Jahren Berufstätigkeit kann eine Niederlassungserlaubnis beantragt werden.
+            Damit sichern Sie sich nicht nur Arbeitskraft, sondern dauerhaftes Know-how und Verlässlichkeit.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie schaffen berufliche Perspektiven und gewinnen loyale Mitarbeitende</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Viele unserer Fachkräfte stammen aus Regionen mit hoher Arbeitslosigkeit oder instabilen Arbeitsmärkten.
+            Für sie bedeutet die Beschäftigung in Deutschland eine echte Lebensperspektive. Diese Wertschätzung führt
+            zu besonderem Engagement, Loyalität und einem starken Integrationswillen.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        Sie profitieren von Kandidaten mit ähnlichem Hintergrund für bessere Teamintegration</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Bei der Vermittlung achten wir darauf, mehreren Fachkräften aus derselben Region einen Arbeitsplatz in
+            geografischer Nähe zu vermitteln. Das erleichtert soziales Ankommen, fördert die gegenseitige
+            Unterstützung und wirkt sich positiv auf das Betriebsklima und die Motivation aus.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie werden bei allen Formalitäten umfassend entlastet</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Von der Beantragung des Visums über die Anerkennung der Berufsqualifikation bis hin zur Anmeldung vor Ort
+            wir übernehmen alle administrativen Schritte für Sie. Unser Team arbeitet dabei eng mit den zuständigen
+            Behörden und Institutionen zusammen, um einen reibungslosen Ablauf zu gewährleisten.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie setzen qualifizierte Mitarbeitende ohne lange Einarbeitung ein</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Unsere Fachkräfte verfügen bereits über die nötige Qualifikation und Sprachkompetenz, um unmittelbar im
+            Arbeitsalltag eingesetzt zu werden. Zusätzlich beraten wir Sie zu geförderten berufsbezogenen
+            Sprachkursen, damit Ihre neuen Mitarbeitenden sprachlich weiter wachsen können direkt im beruflichen
+            Kontext.
+          </p>
+        </div>
+      </div>
+      <div class="purapex-benefit-box">
+        <h3>Sie reagieren effektiv auf den Fachkräftemangel</h3>
+        <div class="d-flex">
+          <i class="bi bi-check2-square fs-1 me-3"></i>
+          <p class="lead mt-4 animate-on-scroll from-left shadowed-text">
+            Während viele deutsche Unternehmen Schwierigkeiten haben, offene Stellen langfristig zu besetzen, eröffnet
+            der internationale Arbeitsmarkt neue Chancen. Purapex bringt Sie mit qualifizierten und motivierten
+            Fachkräften aus dem Ausland zusammen schnell, professionell und nachhaltig.
+          </p>
+        </div>
+      </div>
+
+      <!-- کپی ساختار بالا برای بقیه مزیت‌ها -->
+      <!-- ... سایر <div class="purapex-benefit-box"> ... -->
+    </div>
+  </section>
+
+  <!-----Request section begin ----->
+
+
+  <section class="request-text">
+    <div class="conteiner">
+      <div>
+        <h2>Jetzt qualifizierte Fachkräfte gewinnen starten Sie Ihre Anfrage!</h2>
+        <p>Nutzen Sie die Gelegenheit, Ihr Unternehmen
+          gezielt und nachhaltig mit qualifizierten Fachkräften aus dem Ausland zu verstärken. Wir begleiten Sie
+          persönlich, individuell und dauerhaft von der ersten Anfrage bis weit über die Integration hinaus.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ---- Request-2 ---- -->
+  <section class="request py-5 ">
+    <div class="container">
+      <h2 class="text-center mb-4">Anfrageformular</h2>
+
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+
+          <!-- Name -->
+          <div class="col-md-6">
+            <label for="name" class="form-label">Ihr Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">
+              Bitte geben Sie Ihren Namen ein.
+            </div>
+          </div>
+
+          <!-- Firma -->
+          <div class="col-md-6">
+            <label for="company" class="form-label">Ihre Firma</label>
+            <input type="text" class="form-control" id="company" name="company" required>
+            <div class="invalid-feedback">
+              Bitte geben Sie Ihre Firma ein.
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6">
+            <label for="email" class="form-label">Ihre Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">
+              Bitte geben Sie eine gültige Email-Adresse ein.
+            </div>
+          </div>
+
+          <!-- Telefonnummer -->
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Ihre Telefonnummer</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required pattern="^[0-9\-\+]{9,15}$">
+            <div class="invalid-feedback">
+              Bitte geben Sie eine gültige Telefonnummer ein.
+            </div>
+          </div>
+
+          <!-- Nachricht -->
+          <div class="col-12">
+            <label for="message" class="form-label">Ihre Nachricht</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            <div class="invalid-feedback">
+              Bitte geben Sie Ihre Nachricht ein.
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="col-12 text-center mt-4 Pflichtfelder">
+            <p>* Pflichtfelder
+              Mit dem Absenden Ihrer Anfrage erklären Sie sich damit einverstanden, dass wir Ihre Daten zur Bearbeitung
+              Ihres Anliegens verwenden. Mehr dazu finden Sie in unserer <a href="#">Datenschutzerklärung.</a></p>
+            <button class="btn btn-primary px-4" type="submit">Jetzt unverbindlich anfragen!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ----------------- -->
+
+
+  <!-- ----- Fragen ----- -->
+
+  <div class="accordion my-5" id="faqAccordionMain">
+    <!-- Outer Toggle -->
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="headingMain">
+        <button class="accordion-button   accordion-frag collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseMain" aria-expanded="false" aria-controls="collapseMain">
+          ----------------- Sie haben noch Fragen? -----------------
+        </button>
+      </h3>
+      <div id="collapseMain" class="accordion-collapse collapse" aria-labelledby="headingMain"
+        data-bs-parent="#faqAccordionMain">
+        <div class="accordion-body">
+
+          <!-- Inner Accordion -->
+          <div class="accordion" id="faqInnerAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item question-payment">
+              <h2 class="accordion-header" id="headingPayment">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapsePayment">
+                  Aus welchen Ländern kommen die Auszubildenden?
+                </button>
+              </h2>
+              <div id="collapsePayment" class="accordion-collapse collapse" aria-labelledby="headingPayment"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Die Auszubildenden kommen in den meisten Fällen aus Nicht-EU-Ländern. Aktuell sind das
+                    beispielsweise
+                    Argentinien, Brasilien, Kolumbien, die Türkei und Indonesien.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item question-delivery">
+              <h2 class="accordion-header" id="headingDelivery">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseDelivery" aria-expanded="false" aria-controls="collapseDelivery">
+                  Vermitteln Sie auch Kandidaten aus EU-Ländern?
+                </button>
+              </h2>
+              <div id="collapseDelivery" class="accordion-collapse collapse" aria-labelledby="headingDelivery"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Tatsächlich ist es mittlerweile nicht mehr so einfach, Auszubildende innerhalb der EU zu gewinnen,
+                    da
+                    sich in vielen Ländern die Arbeitsbedingungen gebessert haben und die Arbeit im Heimatland
+                    attraktiver
+                    wird.
+                    <br>
+                    Im Einzelfall rekrutieren wir auch aus dem EU-Inland, hier kann es dann aber zu längeren
+                    Rekrutierungszeiten kommen. Kontaktieren Sie uns einfach für eine individuelle Beratung.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item question-return">
+              <h2 class="accordion-header" id="headingReturn">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseReturn" aria-expanded="false" aria-controls="collapseReturn">
+                  Welches Sprachlevel haben die Kandidaten? </button>
+              </h2>
+              <div id="collapseReturn" class="accordion-collapse collapse" aria-labelledby="headingReturn"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Alle Kandidaten haben zum Zeitpunkt der Vorstellung bei Ihnen mindestens das Sprachniveau B1,
+                    welches
+                    mit einem offiziellen Zertifikat nachgewiesen ist. Das Sprachniveau B1 ist definiert als
+                    „Fortgeschrittene Sprachverwendung“. Mit diesem Niveau sind die Kandidaten in der Lage, das
+                    Bewerbungsgespräch mit Ihnen auf Deutsch zu führen. Sollten Sie sich dazu entscheiden, den Kandidat
+                    einzustellen, lernt dieser bis zur Abreise weiter bis zum B2-Level.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item question-support">
+              <h2 class="accordion-header" id="headingSupport">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSupport" aria-expanded="false" aria-controls="collapseSupport">
+                  Was sind die Voraussetzungen für die Einstellung von Auszubildenden? </button>
+              </h2>
+              <div id="collapseSupport" class="accordion-collapse collapse" aria-labelledby="headingSupport"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Damit Sie Auszubildende aus dem Ausland einstellen können, müssen Sie folgende Voraussetzungen
+                    erfüllen:Sie müssen ein anerkannter Ausbildungsbetrieb seinDie Ausbildungsvergütung muss im ersten
+                    Lehrjahr mindestens 930€ brutto pro Monat betragen. Diese Grenze kann abgesenkt werden wenn Sie den
+                    Auszubildenden Wohnraum oder Verpflegung kostenlos überlassen.Es muss sich um eine duale Ausbildung
+                    handeln, d.h. der Auszubildende muss von Tag eins an einen Lohn beziehen und bei Ihnen im Betrieb
+                    eingebunden sein. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item question-warranty">
+              <h2 class="accordion-header" id="headingWarranty">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWarranty" aria-expanded="false" aria-controls="collapseWarranty">
+                  Reicht das Sprachniveau in der Berufsschule?
+                </button>
+              </h2>
+              <div id="collapseWarranty" class="accordion-collapse collapse" aria-labelledby="headingWarranty"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Ja, das Niveau B1 ist ein gutes Anfangslevel für die Berufsschule. Im Laufe der Ausbildung steigen
+                    die
+                    Sprachkompetenzen sehr schnell an, sodass spätestens gegen Ende der Ausbildung in der Regel ein
+                    fließend Sprachniveau erreicht wird.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item question-cancel">
+              <h2 class="accordion-header" id="headingCancel">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCancel" aria-expanded="false" aria-controls="collapseCancel">
+
+                  Bleiben die Auszubildenden nach der Ausbildung in meinem Betrieb?
+                </button>
+              </h2>
+              <div id="collapseCancel" class="accordion-collapse collapse" aria-labelledby="headingCancel"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Ja, wir vermitteln ausschließlich Kandidaten, die auch nach der Ausbildung langfristig in Ihrem
+                    Unternehmen arbeiten möchten.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="accordion-item question-discount">
+              <h2 class="accordion-header" id="headingDiscount">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseDiscount" aria-expanded="false" aria-controls="collapseDiscount">
+                  Welche schulische Bildung bringen die Bewerber mit? </button>
+              </h2>
+              <div id="collapseDiscount" class="accordion-collapse collapse" aria-labelledby="headingDiscount"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Alle Kandidaten haben in der Regel eine mindestens 12-jährige Schulbildung im Heimatland
+                    durchlaufen.
+                    Dies entspricht ungefähr der mittleren Reife.
+                    <br>
+                    Es bewerben sich aber auch immer wieder Kandidaten, die
+                    bereits ein Studium in der Heimat angefangen oder absolviert haben.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="accordion-item question-account">
+              <h2 class="accordion-header" id="headingAccount">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseAccount" aria-expanded="false" aria-controls="collapseAccount">
+                  Unterstützen Sie die Auszubildenden auch in Deutschland?
+                </button>
+              </h2>
+              <div id="collapseAccount" class="accordion-collapse collapse" aria-labelledby="headingAccount"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Ja, wir bieten Ihnen mit unseren verschiedenen Vermittlungspaketen auch eine Betreuung in
+                    Deutschland
+                    an. Diese umfasst dann alle anfallenden Aufgaben wie Termine bei Behörden, einen persönlichen Mentor
+                    oder Hilfe bei der Wohnungssuche.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="accordion-item question-shipping">
+              <h2 class="accordion-header" id="headingShipping">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseShipping" aria-expanded="false" aria-controls="collapseShipping">
+                  Wie finde ich eine Wohnung für die künftigen Mitarbeiter?
+                </button>
+              </h2>
+              <div id="collapseShipping" class="accordion-collapse collapse" aria-labelledby="headingShipping"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Viele unserer Kunden besitzen entweder selbst oder im Mitarbeiterkreis geeignete Wohnungen, in denen
+                    die Auszubildenden nach Ihrer Ankunft unterkommen können. Dies stellt zumindest am Anfang die
+                    einfachste Möglichkeit dar.
+                    <br>
+                    Falls Sie keine eigenen Wohnungen haben, unterstützen wir Sie auf Wunsch jedoch selbstverständlich
+                    bei
+                    der Suche.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="accordion-item question-invoice">
+              <h2 class="accordion-header" id="headingInvoice">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseInvoice" aria-expanded="false" aria-controls="collapseInvoice">
+                  Was unterscheidet Purapex von anderen Anbietern?
+                </button>
+              </h2>
+              <div id="collapseInvoice" class="accordion-collapse collapse" aria-labelledby="headingInvoice"
+                data-bs-parent="#faqInnerAccordion">
+                <div class="accordion-body">
+                  <p>
+                    Purapex ist Ihr zuverlässiger Partner für eine langfristige Zusammenarbeit. Wir vermitteln Ihnen
+                    ausschließlich Kandidaten die an einer langfristigen Karriere in Ihrem Unternehmen interessiert
+                    sind.
+                    Gleichzeitig haben Sie stets einen persönlichen Ansprechpartner von Purapex der Ihnen bei Fragen und
+                    Problemen jederzeit zur Seite steht.</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- end inner accordion -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------- -->
+
+  <!-- footer -->
+
+<footer class=" text-white pt-5 pb-4" id="footer">
+  <div class="container text-md-left">
+    <div class="row text-md-left text-center">
+
+        <!-- Purapex Overview -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+          <img src="./assets/img/logo/logowork22.png" alt="">
+          <p>
+            <strong>Ihr verlässlicher Partner</strong> für die nachhaltige und langfristige Gewinnung von Fachkräften.
+          </p>
+        </div>
+
+
+      <!-- Leistungen (nowrap) -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">Leistungen</h6>
+        <p><a href="#" class="text-white text-decoration-none d-inline-block w-100" style="white-space: nowrap;">Fachkräfte aus dem Ausland</a></p>
+        <p><a href="#" class="text-white text-decoration-none d-inline-block w-100" style="white-space: nowrap;">Internationale Fachkräfte</a></p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+        <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Kontakt</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Impressum</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Datenschutz</a></p>
+      </div>
+
+      <!-- Kontakt Info -->
+      <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">Ihr Kontakt</h6>
+        <p class="mb-1"><strong>Purapex GmbH</strong></p>
+        <p class="mb-1">Dreischeibenhaus 1<br>40211 Düsseldorf</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+49 211 88 250 341</p>
+        <p class="mb-1"><i class="fas fa-globe me-2"></i><a href="https://www.purapex.de" class="text-white text-decoration-none">www.purapex.de</a></p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <hr class="mb-4 mt-4 border-secondary">
+    <div class="row align-items-center">
+      <div class="col-md-12 text-center">
+        <p class="mb-0">© Purapex 2025 All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/java.js"></script>
+
+  <script>
+    // Toggle menu on mobile hamburger click
+    document.getElementById('navbar-toggler').addEventListener('click', function () {
+      document.querySelector('.header__menu').classList.toggle('open');
+    });
+  </script>
+
+</body>
+
+</html>

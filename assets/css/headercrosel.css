@@ -1,0 +1,195 @@
+/* -------- ساختار اصلی سکشن دوتایی -------- */
+#dual-slider-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#dual-slider-section .row {
+  height: 100%;
+}
+
+#imageCarousel {
+  width: 100%;
+  height: 100vh;
+}
+
+#imageCarousel .carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* -------- اسلایدر متن -------- */
+#textCarousel .carousel-inner {
+  height: 100%;
+  min-height: 400px;
+}
+
+#textCarousel .carousel-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#text-carousel {
+  margin-right: 15rem;
+  margin-left: -10rem;
+  background-color: var(--primary-color1);
+}
+
+.caption-bg {
+  color: var(--primary-color4);
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.caption-bg h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.caption-bg p {
+  font-size: 1.2rem;
+}
+
+/* -------- دکمه سفارشی -------- */
+.btn-custom {
+  background-color: var(--primary-color3);
+  color: var(--primary-color5);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-custom:hover {
+  background-color: var(--primary-color1);
+  color: var(--primary-color4);
+  transform: translateY(-2px);
+}
+
+/* -------- موج بین دو اسلایدر -------- */
+.vertical-wave {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(66.6666% - 25px);
+  width: 50px;
+  height: 100vh;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.vertical-wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(90deg);
+}
+
+/* -------- موج پایین -------- */
+.wave-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+}
+
+.wave-overlay svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+  fill: var(--primary-color4);
+}
+
+/* -------- انیمیشن ورود -------- */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#imageCarousel .carousel-item.active,
+.animate-image {
+  animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+#textCarousel .carousel-item.active,
+.animate-text {
+  animation: slideInFromRight 2s ease-in-out forwards;
+}
+
+/* -------- ریسپانسیو -------- */
+@media (max-width: 991.98px) {
+  #dual-slider-section {
+    height: auto;
+  }
+
+  #imageCarousel {
+    height: 50vh;
+  }
+
+  #imageCarousel .carousel-item img {
+    height: 50vh;
+  }
+
+  #text-carousel {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .caption-bg h1 {
+    font-size: 1.6rem;
+  }
+
+  .caption-bg p {
+    font-size: 1rem;
+  }
+
+  .vertical-wave {
+    display: none;
+  }
+
+  .btn-custom {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* رفع اشتباه تایپی */
+#imageCarouser {
+  margin-left: 2rem;
+}

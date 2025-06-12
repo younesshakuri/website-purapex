@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/headercrosel.css">
+    <link rel="stylesheet" href="../css/uberuns.css">
+    <link rel="stylesheet" href="../css/unsere.css">
+
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <title>Purapex</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header hero-navbar fixed-top shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <a href="index.html" class="navbar-brand">
+        <img src="../img/logo/Purapex_Logo4.png" alt="Purapex Logo" class="img-fluid" />
+      </a>
+
+      <!-- Hamburger Button for mobile -->
+      <button class="navbar-toggler d-md-none" type="button" aria-label="Toggle navigation" id="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="header__menu">
+        <ul class="nav">
+          <li class="nav-item animated-border"><a class="nav-link active " href="../../index.html">Home</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="../html/uberuns.html">Über uns</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" id="color-Contras" href="../html/unsere.html">Unsere
+              Leistungen</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="./karriere.html">Karriere</a></li>
+          <li class="nav-item animated-border"><a class="nav-link" href="../html/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <!--  Carousel -->
+
+  <section id="dual-slider-section" class="position-relative py-5">
+    <div class="container-fluid">
+
+      <div class="row g-0 align-items-center">
+        <!-- Image Carousel -->
+
+        <!-- <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1">
+      <i class="bi bi-heart-pulse-fill"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+      <i class="bi bi-gear-fill"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+      <i class="bi bi-laptop"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4">
+      <i class="bi bi-building"></i>
+    </button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5">
+      <i class="bi bi-lightning-fill"></i>
+    </button>
+  </div> -->
+
+
+        <div class="col-md-8 position-relative">
+          <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" id="img-border">
+              <div class="carousel-item active">
+                <img src="../img/crusel/Artzin02.png" class="d-block w-100" alt="Artzin" />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/crusel/ingenieur02.png" class="d-block w-100" alt="ingenieur" />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/crusel/IT03.png" class="d-block w-100" alt="IT" />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/crusel/Architekt02.png" class="d-block w-100" alt="Architekt" />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/crusel/premium002.png" class="d-block w-100" alt="premium" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Carousel -->
+        <div class="col-md-3 position-relative" id="cro-text">
+          <div id="textCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner text-center d-flex align-items-center justify-content-center">
+              <div class="carousel-item active">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Grenzen überwinden, Talente gewinnen</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section1" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Global rekrutieren. Regional profitieren.</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section2" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Wir bringen Kompetenz über Grenzen hinweg zu Ihnen</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section3" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Global rekrutieren. Regional profitieren</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section4" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="caption-bg p-4 rounded" id="text-carousel">
+                  <h1>Jetzt unverbindlich anfragen!</h1>
+                  <p>Sichern Sie sich bereits jetzt die Fachkräfte von morgen!</p>
+                  <a href="#section5" class="btn btn-custom mt-3">Jetzt unverbindlich anfragen!</a>
+                </div>
+              </div>
+              <!-- سایر کپشن‌ها -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- -----unsere-leistungen----- -->
+
+    <section id="unsere-leistungen" class="leistungen-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <i class="bi bi-stars fs-1 text-primary"></i>
+                <h2 class="fw-bold display-5 mt-3">Unsere Leistungen – persönlich, strukturiert, mehrsprachig</h2>
+                <p class="lead">Der Mangel an qualifiziertem Personal betrifft viele Branchen – besonders in Pflege,
+                    Technik, Bau, Industrie und IT. Gleichzeitig gibt es weltweit hochmotivierte Fachkräfte und
+                    Auszubildende, die in Deutschland arbeiten und sich langfristig integrieren möchten.
+                    Purapex bringt Menschen und Unternehmen erfolgreich zusammen – mit System, Empathie und
+                    internationaler Erfahrung.
+                    Wir bieten Ihnen eine vollständige, mehrsprachige Betreuung über den gesamten Rekrutierungs- und
+                    Integrationsprozess hinweg. Unser Ziel ist es, Ihnen spürbare Entlastung zu bieten – und Fachkräfte
+                    erfolgreich und nachhaltig in Ihre Strukturen zu integrieren.
+                </p>
+            </div>
+
+            <!-- Leistungskarte 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="../img/unsere/International-Recruiting.png" class="img-fluid rounded shadow"
+                        alt="Rekrutierung">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-success fw-bold"><i class="bi bi-search fs-3 me-2"></i>Internationale Rekrutierung &
+                        passgenaue Auswahl</h4>
+                    <ul>
+                        <li>Erstellung eines klaren Anforderungsprofils mit Ihrem Unternehmen</li>
+                        <li>Internationale Direktansprache & Vorauswahl in Drittstaaten, v. a. in:
+                            Argentinien, Bolivien, Peru, Kolumbien, Mexiko, Ecuador, Paraguay
+                            sowie in der Türkei und im Iran
+                        </li>
+                        <li>Mehrstufige Auswahlverfahren inkl. Interviews, fachlicher Prüfung und
+                            Persönlichkeitseinschätzung</li>
+                        <li>Durchführung von Workshops und Vorintegrationsmaßnahmen im Herkunftsland</li>
+                        <li>Qualifikationsprüfung durch unsere Branchenexperten (z. B. Pflege, IT, Technik)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Leistungskarte 2 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <img src="../img/unsere/study.jpg" class="img-fluid rounded shadow" alt="Sprachkurs">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-info fw-bold"><i class="bi bi-chat-left-text fs-3 me-2"></i>Sprachliche Vorbereitung
+                        – fundiert & berufsbezogen</h4>
+                    <ul>
+                        <li>Deutsch-Intensivkurse im Herkunftsland: mindestens B1, häufig B2</li>
+                        <li>Fachsprachliche Vorbereitung je nach Berufsfeld</li>
+                        <li>Prüfung aller Sprachzertifikate und aktiver Sprachkompetenz vor Vermittlung</li>
+                        <li>Möglichkeit zur Sprachförderung nach Ankunft in Deutschland</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Leistungskarte 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="../img/unsere/heuses01.png" class="img-fluid rounded shadow" alt="Integration">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-warning fw-bold"><i class="bi bi-house-door fs-3 me-2"></i>Integration in
+                        Deutschland – strukturiert & persönlich</h4>
+                    <p>Unsere Integrationsleistungen beginnen nicht mit dem ersten Arbeitstag – sondern schon davor. Wir
+                        begleiten Ihre neuen Mitarbeitenden Schritt für Schritt:</p>
+                    <ul>
+                        <li>Wohnraumsuche & Übergangsunterkunft</li>
+                        <li>Anmeldung beim Einwohnermeldeamt</li>
+                        <li>Eröffnung von Bankkonten & GEZ-Anmeldung</li>
+                        <li>Beantragung von Gesundheitskarten & Versicherungen</li>
+                        <li>Mitversicherung von Familienmitgliedern</li>
+                        <li>Einschulung von Kindern & Kita-Anmeldung</li>
+                        <li>Persönliche Begleitung zu Behörden, Ämtern, Krankenkassen, Jobcenter, Ausländerbehörden</li>
+                        <li>Regionale Ansprechpartner:innen zur Integration vor Ort</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Leistungskarte 4 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <img src="../img/unsere/Begleitung.jpg" class="img-fluid rounded shadow" alt="Mentoring">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-danger fw-bold"><i class="bi bi-people fs-3 me-2"></i>Mentoring & nachhaltige
+                        Begleitung</h4>
+                    <ul>
+                        <li>Persönliche Betreuung für Unternehmen und Fachkraft – auch nach Arbeitsantritt</li>
+                        <li>Regelmäßige Gespräche, Konfliktlösung, interkulturelle Unterstützung</li>
+                        <li>Zugang zu Integrationsangeboten, Sprachförderung, lokalen Netzwerken</li>
+                        <li>Betreuung in <strong>Deutsch, Englisch, Spanisch, Türkisch und Farsi</strong> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Leistungskarte 5 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="../img/unsere/Trend.jpg" class="img-fluid rounded shadow" alt="Fachkräfteverfahren">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-primary fw-bold"><i class="bi bi-arrow-repeat fs-3 me-2"></i>Beschleunigtes
+                        Fachkräfteverfahren (§81a AufenthG)</h4>
+                    <p>Wir übernehmen das komplette Verfahren für Sie – von der Antragstellung bis zur Finalisierung:
+                    </p>
+                    <ul>
+                        <li>Strukturierte Vorbereitung & rechtssichere Kommunikation mit Behörden</li>
+                        <li>Koordination aller erforderlichen Schritte mit Ausländerbehörden und BA</li>
+                        <li>Deutliche Zeitersparnis und Planungssicherheit für Ihren Betrieb</li>
+                        <li>Keine administrativen Hürden – <strong>Sie konzentrieren sich auf Ihr Tagesgeschäft</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Leistungskarte 6 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <img src="../img/unsere/visa.jpg" class="img-fluid rounded shadow" alt="Visum und Recht">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-secondary fw-bold"><i class="bi bi-file-earmark-check fs-3 me-2"></i>Visum &
+                        rechtliche Formalitäten – zuverlässig geregelt</h4>
+                    <p>Wir kümmern uns um die vollständige Durchführung des:</p>
+                    <ul>
+                        <li><strong>Arbeitsvisumsverfahrens </strong> (z. B. für qualifizierte Fachkräfte)</li>
+                        <li><strong>Nationalen Visumverfahrens</strong> (z. B. für Auszubildende oder
+                            Familienangehörige)</li>
+                    </ul>
+                    <p>inkl. Dokumentenprüfung, Terminierung bei Auslandsvertretungen, Einholung behördlicher
+                        Zustimmungen und Reiseorganisation.</p>
+                </div>
+            </div>
+
+            <!-- Abschluss -->
+            <div class="text-center mt-5">
+                <i class="bi bi-check-circle-fill fs-1 text-success"></i>
+                <h2>Fazit:</h2>
+                <h3 class="fw-bold mt-3">Purapex entlastet. Purapex begleitet. Purapex verbindet.</h3>
+                <p class="lead">Mit persönlicher Nähe, strukturiertem Vorgehen und internationalem Know-how – von der
+                    Bewerbung bis zur Integration.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+
+    <footer class=" text-white pt-5 pb-4" id="footer">
+        <div class="container text-md-left">
+            <div class="row text-md-left text-center">
+
+                <!-- Purapex Overview -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <img src="../img/logo/logowork22.png" alt="">
+                    <p>
+                        <strong>Ihr verlässlicher Partner</strong> für die nachhaltige und langfristige Gewinnung von
+                        Fachkräften.
+                    </p>
+                </div>
+
+
+                <!-- Leistungen (nowrap) -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Leistungen</h6>
+                    <p><a href="#" class="text-white text-decoration-none d-inline-block w-100"
+                            style="white-space: nowrap;">Fachkräfte aus dem Ausland</a></p>
+                    <p><a href="#" class="text-white text-decoration-none d-inline-block w-100"
+                            style="white-space: nowrap;">Internationale Fachkräfte</a></p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Kontakt</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Impressum</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Datenschutz</a></p>
+                </div>
+
+                <!-- Kontakt Info -->
+                <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Ihr Kontakt</h6>
+                    <p class="mb-1"><strong>Purapex GmbH</strong></p>
+                    <p class="mb-1">Dreischeibenhaus 1<br>40211 Düsseldorf</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+49 211 88 250 341</p>
+                    <p class="mb-1"><i class="fas fa-globe me-2"></i><a href="https://www.purapex.de"
+                            class="text-white text-decoration-none">www.purapex.de</a></p>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="mb-4 mt-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">© Purapex 2025 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/java.js"></script>
+
+    <script>
+        // Toggle menu on mobile hamburger click
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            document.querySelector('.header__menu').classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>

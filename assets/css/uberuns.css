@@ -1,0 +1,82 @@
+
+:root {
+    --primary-color1: #FFFFFF99;
+    /* سفید شفاف */
+    --primary-color2: #9fb39f;
+    /* سبز */
+    --primary-color3: #232c2676;
+    /* خاکستری تیره با شفافیت */
+    --primary-color4: #232c26;
+    /* سبز تیره */
+    --primary-color5: #f0fbf6;
+    /* سبز خیلی روشن */
+}
+
+
+/* ------------------------ */
+
+
+/* سکشن درباره ما */
+#uber-uns {
+  background-color:var(--primary-color5); /* می‌تونی به var(--primary-colorX) تغییر بدی */
+}
+
+/* آیکون‌ها با فاصله و رنگ زیبا */
+#uber-uns i {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+#uber-uns h2 {
+  font-size: 2rem;
+  color: var(--primary-color4);
+}
+
+#uber-uns h5 {
+  font-size: 1.2rem;
+  color: var(--primary-color4);
+}
+
+#uber-uns p {
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+}
+
+/* کارت موسس */
+#uber-uns .rounded-circle {
+  border: 3px solid var(--primary-color2);
+}
+
+#uber-uns .shadow-sm {
+  transition: transform 0.3s ease;
+}
+
+#uber-uns .shadow-sm:hover {
+  transform: translateY(-4px);
+}
+
+/* آیکون پایانی */
+#uber-uns .text-center i {
+  font-size: 2rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  #uber-uns h2 {
+    font-size: 1.5rem;
+  }
+
+  #uber-uns .caption-bg {
+    padding: 1rem;
+  }
+
+  #uber-uns .rounded-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  #uber-uns p {
+    font-size: 0.95rem;
+  }
+}

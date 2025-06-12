@@ -1,0 +1,104 @@
+/* سکشن اصلی */
+.recruiting-section {
+  background-color: var(--primary-color1);
+  padding: 4rem 0;
+}
+
+.recruiting-section h2 {
+  color: var(--primary-color4);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recruiting-section p {
+  color: #333;
+  text-align: justify;
+}
+
+/* کارت شغل */
+.recruiting-card {
+  background-color: white;
+  border: 1px solid var(--primary-color3);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.recruiting-card:hover {
+  transform: scale(1.02);
+}
+
+.recruiting-card h5 {
+  color: var(--primary-color2);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.recruiting-card i {
+  color: var(--primary-color2);
+  margin-right: 0.5rem;
+}
+
+/* لیست وظایف */
+.recruiting-card ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #555;
+}
+
+.recruiting-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* عکس تیم */
+.recruiting-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* دکمه اقدام */
+.apply-btn {
+  background-color: var(--primary-color3);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: var(--primary-color2);
+  color: var(--primary-color5);
+}
+
+/* بخش مزایا */
+.benefits-list {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  color: #333;
+}
+
+.benefits-list li {
+  margin-bottom: 0.6rem;
+}
+
+.contact-info {
+  background-color: var(--primary-color2);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contact-info p,
+.contact-info a {
+  color: white;
+  font-weight: bold;
+}

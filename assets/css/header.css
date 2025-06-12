@@ -1,0 +1,193 @@
+/* ------------ هدر و ناوبار ------------ */
+
+.hero-navbar {
+  background: var(--primary-color1);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  padding: 6px 0;
+}
+
+/* لوگو */
+.navbar-brand img {
+  width: 160px;
+  height: auto;
+}
+
+/* دکمه همبرگری */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+/* آیکون همبرگری */
+.navbar-toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color2);
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* منو اصلی (دسکتاپ) */
+.header__menu {
+  margin-right: 15rem;
+}
+
+.header__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.header__menu ul li {
+  display: inline-block;
+}
+
+.header__menu ul li a {
+  color: var(--primary-color4);
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.header__menu ul li a:hover {
+  color: var(--primary-color2);
+}
+
+/* رنگ خاص لینک */
+#color-Contras {
+  color: var(--primary-color2);
+}
+#color-Contras:hover {
+  color: var(--primary-color4);
+}
+
+/* دکمه‌ها بدون پس‌زمینه */
+.animated-border {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #881414;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #0f1414;
+  border-radius: 5px;
+  z-index: -1;
+  transform: scaleX(0) scaleY(0);
+  transform-origin: top left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-border:hover::before {
+  transform: scaleX(1) scaleY(1);
+}
+
+/* حالت موبایل */
+@media (max-width: 767.98px) {
+
+  .container.d-flex {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    z-index: 9999;
+  }
+
+  .header__menu.open {
+    max-height: 400px;
+  }
+
+  .header__menu ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .header__menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__menu ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand img {
+    width: 140px;
+  }
+}
+
+/* حالت تبلت / بین موبایل و دسکتاپ */
+@media (max-width: 991.98px) {
+  .header__menu {
+    margin-right: 0;
+  }
+
+  .header__menu ul {
+    gap: 1.5rem;
+  }
+
+  .header__menu ul li a {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,824 @@
+/* ------------ تنظیمات پایه و ریست ------------ */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    background-image: url(../img/backgrand/nikitapishchugin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-color: var(--primary-color5); */
+
+}
+
+/* ------------ تعریف رنگ‌ها به صورت متغیر ------------ */
+:root {
+    --primary-color1: #FFFFFF99;
+    /* سفید شفاف */
+    --primary-color2: #9fb39f;
+    /* سبز */
+    --primary-color3: #232c2676;
+    /* خاکستری تیره با شفافیت */
+    --primary-color4: #232c26;
+    /* سبز تیره */
+    --primary-color5: #f0fbf6;
+    /* سبز خیلی روشن */
+}
+
+
+/* ------------ بخش‌ها / سکشن‌ها ------------ */
+#candida {
+    /* background-color: var(--primary-color5); */
+    margin-top: -8rem;
+
+}
+
+#candida-text {
+    background-color: var(--primary-color1);
+}
+
+.shadowed-text {
+    color: var(--primary-color4);
+    text-shadow: 2px 2px 4px #9fb39f;
+}
+
+#candida p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bi-fill i {
+    margin-top: -2rem;
+}
+
+.page-section {
+    min-height: 70vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -5rem;
+}
+
+/* ----------certificate---------- */
+
+#certificate {
+    background-color: var(--primary-color4);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#certificate .container {
+    height: auto;
+}
+
+.cert-card {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: var(--primary-color4);
+}
+
+
+.cert-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #f0fbf6;
+
+}
+
+.cert-card:hover {
+    transform: scale(0.8);
+    box-shadow: 0 6px 16px #f0fbf6;
+}
+
+
+/* ------------ انیمیشن اسکرول (با IntersectionObserver) ------------ */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ----------------- Asset Section ----------------- */
+#skill-menu {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: #f8f9fac1;
+}
+
+#skill-menu h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#skill-menu p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.color4 i {
+    color: var(--primary-color4, #007bff);
+}
+
+.progres {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.d-flex.align-items-center {
+    margin-bottom: 1.5rem;
+}
+
+/* Right background preview box */
+#right-column {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.asset-img {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* ----------------- Activity Section ----------------- */
+#Activity {
+    background-color: var(--primary-color3, #ffffffca);
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    /* margin-top: 2rem; */
+}
+
+/* #Activity-text {
+    margin-top: 5rem;
+} */
+
+#Activity-text,
+#Activity-uns {
+    background-color: var(--primary-color1, #ffffff);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#Activity-text h2,
+#Activity-uns h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#Activity-text p,
+#Activity-uns p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 1rem;
+}
+
+/* ----------------- Carousel ----------------- */
+
+
+#carouselExampleSlidesOnly {
+    background-color: var(--primary-color1, #ffffff);
+    /* padding: -5rem; */
+    border-radius: 10px;
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    height: 12rem;
+}
+
+.carousel-item {
+    min-height: 300px;
+    transition: transform 0.5s ease-in-out;
+    line-height: 1.4;
+}
+
+.carousel-item .d-flex {
+    margin-bottom: 1.5rem;
+
+}
+
+.carousel-item p {
+    margin-left: 5rem;
+}
+
+.carousel-item i {
+    color: var(--primary-color4);
+    transition: transform 0.3s ease;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.carousel-item i:hover {
+    transform: scale(1.2);
+}
+
+#carouselExampleSlidesOnly p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+
+
+/* ----------------- Responsive Fixes ----------------- */
+@media (max-width: 768px) {
+    #skill-menu .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #skill-menu .progres {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    #Activity-text h2,
+    #Activity-uns h4 {
+        font-size: 1.4rem;
+    }
+}
+
+/* --------cooperation----------- */
+
+#Cooperation {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color4);
+}
+
+#Cooperation-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#Cooperation-text {
+    color: var(--primary-color5);
+    text-align: justify;
+    text-justify: inter-word;
+    height: 100%;
+}
+
+.spacer {
+    width: 30px;
+}
+
+/* ------------uber------------------ */
+
+
+#ubersagen {
+    background-color: var(--primary-color5);
+    color: var(--primary-color4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 3rem;
+}
+
+#carouselExampleAutoplaying {
+    background-color: var(--primary-color4);
+    margin-top: 1rem;
+}
+
+.uberimg img {
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+
+.uberimg h3 {
+    font-size: 0.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.uberimg span {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#uber-img h3 {
+    direction: rtl;
+}
+
+
+/* ------------------------------------ */
+
+
+/* -------- advertising ---------- */
+
+#advertising {
+    background-color: var(--primary-color5);
+    margin-top: 5rem;
+    height: 20vh;
+}
+
+#advertising p {
+    color: var(--primary-color4);
+}
+
+#advertising img {
+    width: 100px;
+    height: 120px;
+
+}
+
+#advertising-kaef {
+    background-color: var(--primary-color5);
+}
+
+
+
+/* -------------------- */
+
+.toggle-content {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-header {
+    cursor: pointer;
+    user-select: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.toggle-header .arrow {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.toggle-box.open .arrow {
+    transform: rotate(90deg);
+}
+
+.toggle-box.open .toggle-content {
+    display: block;
+}
+
+.toggle-box {
+    margin-bottom: 20px;
+}
+
+#togglebox {
+    background-color: var(--primary-color4);
+}
+
+#togglebox h3 {
+    color: var(--primary-color5);
+    text-align: center;
+}
+
+#togglebox p {
+    color: var(--primary-color5);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#toggleimg p {
+    color: var(--primary-color4);
+
+}
+
+#togglebox-Vorteile {
+    background-color: var(--primary-color5);
+}
+
+
+#togglebox-Vorteile h3 {
+    color: var(--primary-color4);
+    text-align: center;
+}
+
+#togglebox-Vorteile p {
+    color: var(--primary-color4);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* ----------Ihre-Vorteile---------- */
+
+/* کل سکشن مزایا */
+#purapex-benefits {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+    /* به‌جای منفی */
+    background-color: var(--primary-color1);
+}
+
+.page-section {
+    min-height: 70vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 0 !important;
+    /* جلوگیری از تداخل */
+}
+
+
+#purapex-benefits-text {
+    background-color: var(--primary-color1);
+}
+
+/* سایه متنی */
+.purapex-shadow-text {
+    color: var(--primary-color4);
+    text-shadow: 2px 2px 4px #9fb39f;
+}
+
+/* جعبه مزایا */
+.purapex-benefit-box {
+    background-color: var(--primary-color1);
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+/* عنوان مزایا */
+.purapex-benefit-box h3 {
+    text-align: justify;
+    margin-left: 2rem;
+}
+
+/* متن پاراگراف‌ها */
+#purapex-benefits p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* آیکون */
+.purapex-benefit-box i {
+    margin-top: -0.5rem;
+}
+
+/* ------Request----- */
+.request-text {
+    background-color: var(--primary-color4);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.request-text h2 {
+    color: var(--primary-color5);
+    margin-top: 5rem;
+}
+
+.request-text p {
+    color: var(--primary-color1);
+}
+
+/* -- */
+
+.request {
+    background-color: var(--primary-color4);
+}
+
+.request h2 {
+    font-weight: 700;
+    color: var(--primary-color5, #000);
+}
+
+.request label {
+    color: var(--primary-color5);
+}
+
+input:required,
+textarea:required {
+    border-left: 3px solid var(--primary-color3, --primary-color3);
+}
+
+.invalid-feedback {
+    color: var(--primary-color3);
+}
+
+.Pflichtfelder {
+    color: var(--primary-color5);
+}
+
+
+.Pflichtfelder a {
+    color: var(--primary-color5);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color5);
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-color5);
+}
+
+.Pflichtfelder button {
+    background-color: var(--primary-color5);
+    color: var(--primary-color4);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Pflichtfelder button:hover {
+    background-color: var(--primary-color1);
+    color: var(--primary-color5);
+}
+
+
+/* --------------------- */
+
+
+
+/* ---------sagen-------- */
+
+#faqAccordionMain {
+    background-color: var(--primary-color4);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 10px solid var(--primary-color4);
+    border-radius: 10%;
+}
+
+#faqAccordionMain h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: var(--primary-color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.faqAccordionMain button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#faqInnerAccordion p {
+    color: var(--primary-color2);
+}
+
+.accordion-button {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color4);
+    color: var(--primary-color5);
+}
+
+.accordion-frag {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.accordion-title-large {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-color5);
+    border-radius: 0.5rem;
+}
+
+.accordion-header button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.accordion-title-large {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-color5);
+    border-radius: 0.5rem;
+}
+
+
+/* foooter */
+
+
+#footer {
+    background-color: var(--primary-color4);
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+#footer img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 3rem;
+}
+
+#footer h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem var(--primary-color2);
+}
+
+#footer p {
+    color: var(--primary-color2);
+}
+
+
+#footer a {
+    /* border: 1px solid var(--primary-color2); */
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #212a24;
+
+}
+
+#footer a:hover {
+    background-color: var(--primary-color1);
+    color: var(--primary-color4);
+    border-radius: 10px;
+}
+
+
+
+#footer hr {
+    opacity: 0.15;
+}
+
+
+.Leistungen {
+    padding: auto;
+}
+
+/* .anfrag a:hover {
+    background-color: var(--primary-color1);
+    color: var(--primary-color4);
+} */
+
+
+
+/*---------- mobeil respansiv-------------- */
+
+/* ---------------- Responsive Optimizations ---------------- */
+@media (max-width: 767.98px) {
+
+    .page-section {
+        padding: 40px 15px;
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .d-flex .progres {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+    }
+
+    .display-4 {
+        font-size: 1.5rem;
+    }
+
+    .display-6 {
+        font-size: 1.2rem;
+    }
+
+    #Cooperation-text,
+    #candida-text,
+    #Activity-text,
+    #Activity-uns {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .carousel-item p {
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+    }
+
+    .cert-card {
+        width: 140px;
+        height: 140px;
+    }
+
+    .navbar-brand img {
+        width: 140px;
+    }
+
+    .caption-bg h1 {
+        font-size: 1.4rem;
+    }
+
+    .caption-bg p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+        /* برای موبایل حذف دکمه‌های فلش */
+    }
+}
+
+
+
+
+#kontakt {
+    background-color: var(--primary-color5);
+    color: var(--primary-color4);
+}
+
+
+#kontakt p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem; 
+    color: var(--primary-color4);
+    text-shadow: 0.3rem 0.3rem 0.3rem var(--primary-color2);
+}
+
+#kontakt h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem; 
+    color: var(--primary-color4);
+    text-shadow: 0.3rem 0.3rem 0.3rem var(--primary-color2);
+}
+
+#kontakt a {
+    color: var(--primary-color2);
+    background-color: var(--primary-color4);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color4);
+    text-decoration: none;
+}
